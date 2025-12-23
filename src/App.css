@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4; /* Light grey background like the site */
+  color: #1a1a1a;
+}
+
+/* Main Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: white;
+}
+
+/* Header - Matches the Black Bar in your image */
+.header {
+  background-color: #000000;
+  color: white;
+  padding: 1rem 5%;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.nav-btn.active {
+  color: #ff0000; /* Red highlight like GameStop */
+  border-bottom: 2px solid #ff0000;
+}
+
+/* Hero Section (The 11.11 Banner) */
+.hero-container {
+  width: 100%;
+  padding: 20px 5%;
+  background: white;
+}
+
+.hero-banner {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Product Cards - Matching the clean white look */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 2rem 5%;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-price {
+  color: #e02020;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
